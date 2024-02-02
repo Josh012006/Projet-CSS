@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "fr">
+	<head>
+		<title>Portofolio Web page</title>
+		<meta charset='uft-8'>
+		<link rel="icon" href="images/icon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" href = "styles.css">
+	</head>
+	<body>
+<!--En-tête-->
+		<header>
+			<img src="images/icon.png" alt = "icône" width="30" height="24" id = "icon">
+			<h1 class = "port">Portfolio</h1>
+			<div class = "right">
+				<nav class = "navigation">
+					<!--Le résumé du contenu de la page avec les liens internes-->
+					<a href = "accueil.html">Accueil</a>
+					<a href = "#apropos">A propos</a>
+					<a href = "#comp">Compétences</a>
+					<a href = "#portfolio">Portfolio</a>
+					<a href = "#cv">CV</a>
+					<a href = "#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<section id = "prop">
+			<!--La section à propos-->
+			<h2 id = "apropos" class="titre2">A propos de moi</h2>
+			<h3 class ="titre3">Une petite description de ma personne, de mes objectifs et de mes goûts pour que vous puissiez mieux me connaître</h3>
+			<div id = "present">
+				<figure id = "pic">
+					<img src = "images/mypicture.png" alt = "Ma photo" height = "400" >
+				</figure>
+				<!--Petite biographie-->
+				<div>
+					<p id="nom">Je m'appelle Mongan Josué Saint-Martin Junior. </p>
+					<p>
+						J'ai 18 ans et je suis célibataire.
+						Je suis un actuellement étudiant à Gomycode. Je suis passionné de l'informatique. Calme et jovial, j'aime aussi la lecture. 
+						J'apprécie particulièrement les romans policiers et les histoires d'aventure. Je sais également joué un peu de piano.
+					</p>
+					<!--Objecifs-->
+					<p>
+						Mon rêve est devenir un jour un expert en informatique et de pouvoir pourquoi pas faire une découverte qui permettrait 
+						de révolutionner ce domaine.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<!--La section compétences-->
+			<h2 id = "comp" class="titre2">Compétences</h2>
+			<h3 class ="titre3">Une liste de mes compétences et capacités autant les hardskills que les softskills</h3>
+			<div id ="cmp">
+				<div class ="skills">
+					<h4>Hardskills</h4>
+					<dl>
+						<dt>Langage C++</dt>
+						<dd>
+							Le langage C++ étant un langage très proche de la machine et assez versatile, il est très demandé. Malgré sa difficulté d'apprentissage 
+							pur beaucoup, j'ai réussi à acquérir des compétences dans la programmation en C++. J'ai d'ailleurs un niveau intermédiaire dans ce 
+							domaine. Cela se réflète également à travers <a href = "#projetc++">les projets</a> que j'ai réalisé.
+						</dd>
+						<dt>Développement Web</dt>
+						<dd>
+							J'ai également quelques connaissances en développement web front-end. Je maitrise le html et le CSS. 
+							Vous pourrez trouver le voir dans <a href = "#projetweb">les projets</a> que j'ai réalisé.
+						</dd>
+					</dl>
+				</div>
+
+				<div class ="skills">
+					<h4>Softskills</h4>
+					<dl>
+						<dt>Résolution de problèmes</dt>
+						<dd>
+							J'ai une certaine facilité à analyser les situations, à identifier les problèmes et à proposer des solutions appropriées.
+							Ma nature calme me permet également d'analyser les problèmes avec patience afin de trouver la meilleure solution.
+						</dd>
+						<dt>Communication</dt>
+						<dd>
+							Je réussis à communiquer avec les autres et à transmettre mes idées. En plus, ma maitrise de la langue française et aussi 
+							de celle anglaise me donne une ceraine flexibilité lors des échanges.
+						</dd>
+						<dt>Le travail en équipe</dt>
+						<dd>
+							Travailler efficacement avec d'autres personnes est aussi un autre de mes atout. D'ailleurs mes capacité de communication m'aident 
+							à collaborer et à contribuer à un environnement de travail positif.
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 id = "portfolio" class="titre2">Porfolio</h2>
+			<h3 class ="titre3">Cette partie réunit l'ensemble des projets que j'ai réalisé et qui démontre mes hardskills</h3>		
+			
+			<h3 id = "projetc++" class="proj">Projets C++</h3>
+			<div class ="travail">
+				<!--Un projet C++ pour enrichir et donner du contenu-->
+				<p>
+					Voici un de mes projets en C++. Il s'agit d'un jeu de bataille aérienne. Pour pouvoir le faire, j'ai dû mettre en jeu plusieurs compétences 
+					C++ notamment les notions de programmation Orienté Objet. Je vous insère ci-dessous un aperçu du jeu.
+				</p>
+				<figure>
+					<video width = "1000" height = "500" controls style = "background-color: black;">
+						<source  src = "images/airbattle.mp4" type = "video/mp4">
+					</video>
+				</figure>
+			</div>
+
+			<h3 id = "projetweb" class="proj">Projets Web</h3>
+			<div class ="travail">
+				<!--Un page web pour faire semblant-->
+				<p>
+					J'ai également développé une page web dont je vous donne une image réduite ci-dessous. J'ai participé à la partie front-end en mettant ainsi à profit 
+					mes connaissances en html et en CSS.
+				</p>
+				<figure >
+					<img width = "925" height = "650" src = "images/Web.jpg" alt = "Image de la page Web" >
+				</figure>
+			</div>
+		</section>
+
+		<section>
+			<h2 id = "cv" class="titre2">Mon CV</h2>
+	<!--Trouver une image de CV-->
+			<h3 class ="titre3">Voici ici mon CV. Pour davantage d'informations sur moi veuillez vous rendre <a href = "https://fr.linkedin.com/" target = "_blank" class="nli">ici</a>.</h3>
+			<figure class = "center">
+				<img src = "images/cv.jpg" alt = "Mon CV" width ="40%" >
+			</figure>
+		</section>
+		
+		<footer>
+	<!--Le pied de page-->
+			<p id = "contact">Vous pouvez me contacter en utilisant un des moyens suivants</p>
+			<div>
+				<div>
+					<p style = "color:rgb(240, 214, 180);;">Téléphone</p>
+					<ul>
+						<li>+229 46 00 10 96</li>
+						<li>+221 78 798 78 92</li>
+					</ul>
+				</div>
+				<nav>
+					<p>Adresse mail</p>
+					<a href = "mailto:josuesmjr.mongan@gmail.com">josuesmjr.mongan@gmail.com</a>
+				</nav>
+			</div>
+		<!--Les bouttons donnant accès aux sites et aux réseaux sociaux-->
+			<nav id ="social">
+				<button><a href = "https://www.facebook.com/" target = "_blank"><img src = "images/facebook.png" alt = "Boutton facebook"></a></button>
+				<button><a href = "https://www.instagram.com/" target = "_blank"><img src = "images/insta.png" alt = "Boutton instagram"></a></button>
+				<button><a href = "https://twitter.com/i/flow/login" target = "_blank"><img src = "images/twitter.jpg" alt = "Boutton twitter"></a></button>
+				<button><a href = "https://fr.linkedin.com/" target = "_blank"><img src = "images/linkedin.jpg" alt = "Boutton linkedin"></a></button>
+			</nav>
+			
+			<br>
+			<br>
+			<div id = "avis">
+				<textarea name = "avis" rows="5" cols = "40">Donnez votre avis sur le site!</textarea>
+
+				<form>
+					<input type = "submit" name = "soumission">
+				</form>
+			</div>
+
+		</footer>
+	</body>
+</html>
